@@ -115,7 +115,7 @@ class Leo_Downloadlogs_DownloadController extends Mage_Downloadable_DownloadCont
 														"created_time" => now() );
 								$model->setData($data);
 								$flag = $model->save();		
-								Mage::log("Download link called, model save: ".$flag, null, 'controller.log');				
+											
                 exit(0);
             }
             catch (Exception $e) {
