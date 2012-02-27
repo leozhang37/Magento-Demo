@@ -17,7 +17,7 @@ class Leo_Downloadlogs_DownloadController extends Mage_Downloadable_DownloadCont
 			$io = new Varien_Io_File();
 			$zip = new ZipArchive;
 			$destDir = Mage::getBaseDir('var');
-			$destFile = $destDir. DS. 'test.zip';
+			$destFile = $destDir. DS. $fileName;
 		
 			
 				$io->open(array('path'=>$destDir));
